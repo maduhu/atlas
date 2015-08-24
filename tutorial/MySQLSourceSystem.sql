@@ -3,15 +3,16 @@
 --
 
 CREATE DATABASE IF NOT EXISTS test;
+USE test;
 
 --
 -- Create users
 --
 CREATE USER 'trucker1'@'localhost' IDENTIFIED BY 'trucker';
-GRANT ALL PRIVILEGES ON *.* TO 'trucker1'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON test.* TO 'trucker1'@'localhost' WITH GRANT OPTION;
 
 CREATE USER 'trucker1'@'%' IDENTIFIED BY 'trucker';
-GRANT ALL PRIVILEGES ON *.* TO 'trucker1'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON test.* TO 'trucker1'@'%' WITH GRANT OPTION;
 
 --
 -- Create tables
