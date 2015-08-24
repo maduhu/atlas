@@ -1,4 +1,10 @@
 --
+-- Create database
+--
+
+CREATE DATABASE IF NOT EXISTS test;
+
+--
 -- Create users
 --
 CREATE USER 'trucker1'@'localhost' IDENTIFIED BY 'trucker';
